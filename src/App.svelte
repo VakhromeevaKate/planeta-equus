@@ -10,14 +10,13 @@
 	</div>
 	<div class="main-body">
 		<div class="side-block">
-			<Logo width="300" height="300" />
+			<Logo width="150" height="150" />
 		</div>
 		<div class="main-info">
 			<h1>Hello {name}!</h1>
 			<PageText />
 		</div>
 		<div class="side-block">
-			<Logo width="300" height="300" />
 		</div>
 	</div>
 </main>
@@ -26,6 +25,7 @@
 	main {
 		text-align: center;
 		max-width: 240px;
+		height: 100%;
 	}
 
 	h1 {
@@ -49,19 +49,22 @@
 	.main-body {
 		display: flex;
 		flex-direction: row;
+		justify-content: flex-start;
+		height: 100%;
 	}
 
 	.main-info {
 		max-width: 1200px;
 		text-align: left;
-		margin: auto;
+		margin: 0 auto;
 		padding: 24px;
 	}
 
 	.side-block {
-		min-width: 300px;
+		height: 100%;
+		min-width: 100px;
 		max-width: 500px;
-		background-color: blueviolet;
+		background-color: lightblue;
 	}
 
 	.header {
@@ -70,7 +73,7 @@
 		width: 100%;
 		padding-left: 8px;
 		text-align: left;
-		background-color: blueviolet;
+		background-color: lightblue;
 		display: grid;
 	}
 </style>
